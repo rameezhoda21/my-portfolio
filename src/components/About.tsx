@@ -7,7 +7,7 @@ export default function About() {
       <div className="max-w-2xl mx-auto px-4 text-center">
         <h2 className="text-4xl font-extrabold text-center text-accent drop-shadow-lg mb-10">About Me</h2>
         <p className="text-lg text-gray-700 mb-6">
-          An IBA student currently pursuing a Bachelor's degree in Computer Science. I have a passion for data analytics and web development. My journey in tech has been driven by a desire to create impactful solutions that enhance user experiences and streamline processes. I&apos;m also a football enthusiast, which fuels my competitive spirit and teamwork skills.
+          An IBA student currently pursuing a Bachelor&apos;s degree in Computer Science. I have a passion for data analytics and web development. My journey in tech has been driven by a desire to create impactful solutions that enhance user experiences and streamline processes. I&apos;m also a football enthusiast, which fuels my competitive spirit and teamwork skills.
         </p>
         {/* ← New button row ↓ */}
         <div className="flex justify-center space-x-4">
