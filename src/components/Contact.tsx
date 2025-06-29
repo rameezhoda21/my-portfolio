@@ -30,7 +30,7 @@ export default function Contact() {
           Contact Me
         </motion.h2>
         <p className="text-center text-gray-400 mb-16 text-lg">
-          Let’s connect — I’m always open to new opportunities, ideas, or collaborations.
+          Let&apos;s connect — I&apos;m always open to new opportunities, ideas, or collaborations.
         </p>
 
         <div className="backdrop-blur-lg bg-white/5 border border-white/10 rounded-2xl p-8 shadow-xl md:flex md:space-x-10">
