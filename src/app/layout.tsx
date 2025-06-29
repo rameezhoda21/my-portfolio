@@ -5,7 +5,6 @@ export const metadata = {
   title: "Rameez Hoda",
 };
 
-
 export default function RootLayout({
   children,
 }: {
@@ -18,10 +17,9 @@ export default function RootLayout({
         <meta name="viewport" content="width=device-width,initial-scale=1" />
         <title>{metadata.title}</title>
 
-        {/* Tailwind via CDN */}
+        {/* Tailwind CDN */}
         <script src="https://cdn.tailwindcss.com"></script>
         <script
-          // Configure your custom theme colors, spacing, etc.
           dangerouslySetInnerHTML={{
             __html: `
               tailwind.config = {
