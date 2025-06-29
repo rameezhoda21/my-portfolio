@@ -1,6 +1,5 @@
 // src/app/layout.tsx
 import React from "react";
-import "./globals.css";
 
 export const metadata = {
   title: "Rameez Hoda",
@@ -17,11 +16,9 @@ export default function RootLayout({
         <meta charSet="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <title>{metadata.title}</title>
-        {/* If using Tailwind CDN temporarily during development, avoid for production */}
-        {/* You can remove the CDN once Tailwind is properly configured via PostCSS */}
-        <script src="https://cdn.tailwindcss.com" async></script>
+
+        {/* Tailwind CDN + Config BEFORE render */}
         <script
-          async
           dangerouslySetInnerHTML={{
             __html: `
               tailwind.config = {
@@ -44,10 +41,10 @@ export default function RootLayout({
             `,
           }}
         />
+        <script src="https://cdn.tailwindcss.com"></script>
       </head>
       <body className="bg-transparent">
-        {/* Invisible element to register Tailwind class with CDN */}
-        <div className="hidden bg-black"></div>
+        <div className="hidden bg-primary bg-accent text-accent text-primary" />
         {children}
       </body>
     </html>
