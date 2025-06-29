@@ -41,7 +41,7 @@ export default function Contact() {
             whileInView={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.6 }}
           >
-            <h3 className="text-2xl font-semibold mb-4 text-accent">Let's Talk</h3>
+            <h3 className="text-2xl font-semibold mb-4 text-accent">Let&apos;s Talk</h3>
             <div className="flex items-center space-x-4 text-gray-300">
               <Phone size={20} className="text-accent" />
               <span>+92 3182293386</span>
