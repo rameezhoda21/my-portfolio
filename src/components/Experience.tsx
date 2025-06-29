@@ -7,7 +7,7 @@ import { Calendar } from 'lucide-react';
 const experienceList = [
   {
     title: 'Intern, Event Management & Graphic Design – Dawat Pakistan',
-    description: "Launched Dawat's very own retreat program.",
+    description: "Launched Dawat&apos;s very own retreat program.",
     date: 'July 2023 – Aug 2023',
   },
   {

@@ -1,7 +1,6 @@
 'use client';
 
 import React from 'react';
-import ParticlesBg from './Particles_bg';
 import { motion } from 'framer-motion';
 
 export default function Hero() {
@@ -10,12 +9,7 @@ export default function Hero() {
       id="home"
       className="relative w-full min-h-screen flex items-center justify-center overflow-hidden bg-gradient-to-br from-primary to-accent text-white"
     >
-      {/* Background */}
-      <ParticlesBg />
-
-      {/* Animated Content */}
-
-
+  
       <motion.div
         className="z-10 flex flex-col items-center justify-center text-center px-4 w-full max-w-4xl"
         initial="hidden"
@@ -46,7 +40,7 @@ export default function Hero() {
           }}
           transition={{ duration: 0.8 }}
         >
-          Hi, I’m <span className="text-gray-800">Rameez</span> Hoda
+          Hi, I&apos;m <span className="text-gray-800">Rameez</span> Hoda
         </motion.h1>
 
         <motion.p
