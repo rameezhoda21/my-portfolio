@@ -1,3 +1,4 @@
+// src/app/layout.tsx
 import React from "react";
 import "./globals.css";
 
@@ -12,12 +13,8 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <head>
-        <meta charSet="utf-8" />
-        <meta name="viewport" content="width=device-width,initial-scale=1" />
-        <title>{metadata.title}</title>
-
-        {/* Tailwind CDN */}
+      <body className="bg-transparent">
+        {/* Tailwind CDN and custom theme (moved here) */}
         <script src="https://cdn.tailwindcss.com"></script>
         <script
           dangerouslySetInnerHTML={{
@@ -42,8 +39,6 @@ export default function RootLayout({
             `,
           }}
         />
-      </head>
-      <body className="bg-transparent">
         {children}
       </body>
     </html>
