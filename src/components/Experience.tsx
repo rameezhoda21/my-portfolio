@@ -7,7 +7,7 @@ import { Calendar } from 'lucide-react';
 const experienceList = [
   {
     title: 'Intern, Event Management & Graphic Design – Dawat Pakistan',
-    description: "Launched Dawat&apos;s very own retreat program.",
+    description: "Launched Dawat's very own corporate retreat program.",
     date: 'July 2023 – Aug 2023',
   },
   {
@@ -46,7 +46,7 @@ export default function Experience() {
               viewport={{ once: true }}
               className="bg-white p-6 rounded-xl shadow-md hover:shadow-xl transition-shadow"
             >
-              <h3 className="text-2xl font-semibold mb-2">{item.title}</h3>
+              <h3 className="text-xl font-bold text-gray-700">{item.title}</h3>
               <p className="text-gray-700 mb-1">{item.description}</p>
               <div className="flex items-center space-x-2 text-sm text-gray-500">
                 <Calendar size={16} />

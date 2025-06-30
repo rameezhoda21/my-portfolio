@@ -1,10 +1,10 @@
+// src/app/layout.tsx
 import React from "react";
 import "./globals.css";
 
 export const metadata = {
   title: "Rameez Hoda",
 };
-
 
 export default function RootLayout({
   children,
@@ -18,10 +18,11 @@ export default function RootLayout({
         <meta name="viewport" content="width=device-width,initial-scale=1" />
         <title>{metadata.title}</title>
 
-        {/* Tailwind via CDN */}
+        {/* Tailwind CDN */}
         <script src="https://cdn.tailwindcss.com"></script>
+
+        {/* Tailwind custom config */}
         <script
-          // Configure your custom theme colors, spacing, etc.
           dangerouslySetInnerHTML={{
             __html: `
               tailwind.config = {
@@ -31,13 +32,6 @@ export default function RootLayout({
                       primary: '#8b5cf6',
                       accent: '#c084fc',
                     },
-                    spacing: {
-                      '28': '7rem',
-                      '32': '8rem',
-                    },
-                    zIndex: {
-                      '-10': '-10',
-                    },
                   }
                 }
               }
@@ -45,7 +39,7 @@ export default function RootLayout({
           }}
         />
       </head>
-      <body className="bg-transparent">
+      <body className="bg-transparent text-white">
         {children}
       </body>
     </html>

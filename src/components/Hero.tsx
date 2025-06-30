@@ -7,9 +7,11 @@ export default function Hero() {
   return (
     <section
       id="home"
-      className="relative w-full min-h-screen flex items-center justify-center overflow-hidden bg-gradient-to-br from-primary to-accent text-white"
+      className="relative w-full min-h-screen flex items-center justify-center overflow-hidden bg-gradient-to-br from-primary to-accent"
     >
-  
+      {/* Background gradient fallback (in case Tailwind CDN doesn't apply) */}
+      <div className="absolute inset-0 -z-10 bg-gradient-to-br from-primary to-accent" />
+
       <motion.div
         className="z-10 flex flex-col items-center justify-center text-center px-4 w-full max-w-4xl"
         initial="hidden"
@@ -24,8 +26,8 @@ export default function Hero() {
         }}
       >
         <motion.img
-          src="C:\Users\HP\OneDrive\Dev-Cpp\Documents\portfolio page\my-portfolio\pf.jpg"
-          alt=""
+          src="/my_pic.jpg"
+          alt="Profile"
           className="w-40 h-40 rounded-full mb-6 border-4 border-white shadow-lg"
           initial={{ opacity: 0, scale: 0.9 }}
           animate={{ opacity: 1, scale: 1 }}

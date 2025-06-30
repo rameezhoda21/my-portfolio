@@ -7,36 +7,35 @@ import React, { useState } from 'react';
 type Skill = {
   name: string;
   level: number; // percentage
-  category: 'Language' | 'Tool' | 'Hard Skill' | 'Soft Skill';
+  category: 'Languages' | 'Tools' | 'Hard Skills' | 'Soft Skills';
 };
 
 const skills: Skill[] = [
-  { name: 'C/C++', level: 95, category: 'Language' },
-  { name: 'Python', level: 80, category: 'Language' },
-  { name: 'HTML/CSS', level: 90, category: 'Language' },
-  { name: 'JavaScript', level: 80, category: 'Language' },
-  { name: 'Script-writing', level: 85, category: 'Hard Skill' },
-  { name: 'Teaching', level: 95, category: 'Hard Skill' },
-  { name: 'VSCode', level: 90, category: 'Tool' },
-  { name: 'Jupyter Notebook', level: 90, category: 'Tool' },
-  { name: 'Canva', level: 85, category: 'Tool' },
-  { name: 'GitHub', level: 90, category: 'Tool' },
-  { name: 'EDA Playground', level: 85, category: 'Tool' },
-  { name: 'Leadership', level: 95, category: 'Soft Skill' },
-  { name: 'Communication', level: 90, category: 'Soft Skill' },
-  { name: 'Teamwork', level: 90, category: 'Soft Skill' },
-  { name: 'Problem Solving', level: 90, category: 'Soft Skill' },
+  { name: 'C/C++', level: 95, category: 'Languages' },
+  { name: 'Python', level: 80, category: 'Languages' },
+  { name: 'HTML/CSS', level: 90, category: 'Languages' },
+  { name: 'JavaScript', level: 80, category: 'Languages' },
+  { name: 'Script-writing', level: 85, category: 'Hard Skills' },
+  { name: 'Teaching', level: 95, category: 'Hard Skills' },
+  { name: 'VSCode', level: 90, category: 'Tools' },
+  { name: 'Jupyter Notebook', level: 90, category: 'Tools' },
+  { name: 'Canva', level: 85, category: 'Tools' },
+  { name: 'GitHub', level: 90, category: 'Tools' },
+  { name: 'EDA Playground', level: 85, category: 'Tools' },
+  { name: 'Leadership', level: 95, category: 'Soft Skills' },
+  { name: 'Communication', level: 90, category: 'Soft Skills' },
+  { name: 'Teamwork', level: 90, category: 'Soft Skills' },
+  { name: 'Problem Solving', level: 90, category: 'Soft Skills' },
 ];
 
-const categories = ['All', 'Language', 'Tool', 'Hard Skill', 'Soft Skill'] as const;
+const categories = ['All', 'Languages', 'Tools', 'Hard Skills', 'Soft Skills'] as const;
 
 enum Category {
   All = 'All',
-  Language = 'Language',
-  Library = 'Library',
-  Tool = 'Tool',
-  SoftSkill = 'Soft Skill',
-  HardSkill = 'Hard Skill',
+  Language = 'Languages',
+  Tool = 'Tools',
+  SoftSkill = 'Soft Skills',
+  HardSkill = 'Hard Skills',
 }
 
 export default function Skills() {
